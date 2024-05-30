@@ -1,0 +1,44 @@
+.email-heading{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    .email-content{
+        font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #838383;
+    }
+    .email-textfield{
+        margin-top: 10px;
+    }
+}
+
+.submit-cancel{
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    .cancel-button{
+        color: red;
+        border: 1px solid red;
+        border-radius: 10px;
+    }
+    .cancel-button:hover{
+        border: 1px solid red;
+    }
+    .submit-button{
+        margin-left: 10px;
+        background-color: #7e22ce;
+        border-radius: 10px;
+    }
+    .submit-button:hover{
+        background-color: #7e22ce;
+    }
+}

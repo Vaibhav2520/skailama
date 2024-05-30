@@ -1,0 +1,19 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    .navbar-left {
+      display: flex;
+      .lama {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        color: #7e22ce;
+        font-size: 30px;
+      }
+    }
+    .navbar-right {
+      display: flex;
+    }
+  }

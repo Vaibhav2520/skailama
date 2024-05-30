@@ -1,28 +1,24 @@
 import { Button, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/landing.scss";
-import Setting from "../images/Icon.png";
-import Logo from "../images/directright.png";
-import Notification from "../images/notifications.png";
 import Image from "../images/image.png";
 import Plus from "../images/Vector.png"
 import EmailModal from "../components/modals/emailModal";
+import CreateProjectModal from "../components/modals/createProjectModal";
+import Navbar from "../components/navbar";
 
 const Landing = () => {
     const[openEmailModal , setOpenEmailModal] = useState(false);
-    
+    const[createProjectModal , setCreateProjectModal] = useState(false)
+
+    useEffect(() => {
+        setTimeout(() =>{
+            setOpenEmailModal(true)
+        }, 2000);
+    },[])
   return (
     <>
-      <div className="main-container">
-        <div className="navbar-left">
-          <img src={Logo} alt="Logo" width="40" height="40" />
-          <Typography className="lama">LAMA.</Typography>
-        </div>
-        <div className="navbar-right">
-          <img src={Setting} alt="setting" width="40" height="40" />
-          <img src={Notification} alt="Notification" width="40" height="40" />
-        </div>
-      </div>
+        <Navbar/>
       <div className="main-section">
         <Typography className="main-heading">Create a New Project</Typography>
         <img
@@ -39,12 +35,15 @@ const Landing = () => {
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in
         </Typography>
-        <Button variant="contained" className="main-button">
+        <Button variant="contained" className="main-button" onClick={()=>{
+            setCreateProjectModal(true)
+        }}>
         <img src={Plus} alt="Plus" width="30" height="30" className="plus"/>
         Create a New Project
         </Button>
       </div>
-      <EmailModal openModal={true}/>
+      <EmailModal openModal={openEmailModal} toggleModal = {setOpenEmailModal}/>
+      <CreateProjectModal openModal={createProjectModal} toggleModal= {setCreateProjectModal}/>  
     </>
   );
 };
