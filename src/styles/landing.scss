@@ -1,0 +1,48 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  .navbar-left {
+    display: flex;
+    .lama {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 800;
+      font-style: normal;
+      color: #7e22ce;
+      font-size: 30px;
+    }
+  }
+  .navbar-right {
+    display: flex;
+  }
+}
+
+.main-section {
+  .main-heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    color: #7e22ce;
+  }
+  .main-image {
+    margin-top: 20px;
+  }
+  .main-content{
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #838383;
+  font-size: 20px;
+  }
+  .main-button{
+    margin-top: 20px;
+    background-color: #211935;
+    height: 50px;
+    .plus{
+        margin-right: 10px;
+    }
+  }
+}
