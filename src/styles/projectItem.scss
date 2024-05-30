@@ -1,0 +1,53 @@
+
+.projectItem-container{
+    border-radius: 10px !important;
+    width: 350px;
+    height: 150px;
+    .projectItem-content{
+        display: flex;
+        align-items: center;
+        padding: 30px !important;
+        .sp-section{
+            width: 100px;
+            height: 90px;
+            background-color: #7e22ce;
+            border-radius: 10px;
+            .sp{
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 60px;
+                color: white;
+            }
+        }
+        .card-right{
+            margin-left: 30px;
+            .sample-project{
+                text-align: left;
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                color: #7e22ce;
+            }
+            .episodes{
+                text-align: left;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #3C3C3C;
+                font-size: 15px;
+            }
+            .last-edit{
+                margin-top: 23px;
+                text-align: left;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #969696;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+

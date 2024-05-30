@@ -1,0 +1,28 @@
+.project-container{
+    margin: 50px 100px;
+    .project-section{
+        display: flex;
+        justify-content: space-between;
+        .project-heading{
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 45px;
+            color: #7e22ce;
+        }
+        .create-project-button{
+            margin-top: 20px;
+        background-color: #211935;
+        height: 50px;
+        .plus{
+            margin-right: 10px;
+        }
+        }
+        .create-project-button:hover{
+            background-color: #211935; 
+        }
+    }
+    .grid-container{
+        margin-top: -30px;
+    }
+}
