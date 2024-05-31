@@ -3,8 +3,9 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Youtube from "../../images/Frame 1.png"
-import { Button, TextField } from '@mui/material';
-import "../../styles/uploadvideoModal.scss"
+import {  TextField } from '@mui/material';
+import "../../styles/uploadvideoModal.scss";
+import Button from '@mui/material/Button';
 
 const style = {
     position: 'absolute',
@@ -57,7 +58,7 @@ const UploadvideoModal = (props) => {
               className="description-textfield"
             />         
             </div>
-       
+            <Button variant="contained" className="upload-button">Save</Button>
         </Box>
       </Modal>
     </div>

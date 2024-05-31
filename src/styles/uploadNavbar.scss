@@ -1,0 +1,14 @@
+.upload-navbar {
+    display: flex;
+    justify-content: space-between;
+    
+    .upload-navbar-left {
+      display: flex;
+      align-items: center;
+    }
+    .upload-navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
