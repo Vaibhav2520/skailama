@@ -1,0 +1,25 @@
+.uploadItem-container {
+  width: 315px;
+  border-radius: 20px !important;
+  border: 1px solid #999999;
+  .uploadItem-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .uploadItem-right {
+      .upload {
+        text-align: left;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #3C3C3C;
+      }
+      .youtube-video{
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #3C3C3C;
+      }
+    }
+  }
+}

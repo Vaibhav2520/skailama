@@ -82,26 +82,80 @@
       font-size: 15px;
       margin-bottom: 25px;
     }
-    .divider{
-        margin: 2px;
+    .divider {
+      margin: 2px;
     }
   }
   .right-section {
     width: 80%;
     height: 100vh;
-    .upload-navbar{
+    margin: 20px;
+    .upload-navbar {
+      display: flex;
+      justify-content: space-between;
+      
+      .upload-navbar-left {
         display: flex;
-        justify-content: space-between;
-        margin: 20px;
-        .upload-navbar-left{
-            display: flex;
-    align-items: center;
-        }
-        .upload-navbar-right{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+        align-items: center;
+      }
+      .upload-navbar-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    .upload-heading {
+      display: flex;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      color: #7e22ce;
+      font-size: 40px;
+      margin-top: 25px;
+    }
+    .uploadItem-grid {
+      margin-top: -40px;
+    }
+    .OR{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #999999;
+    }
+    .cloud-upload{
+        width: 100%;
+        height: 300px;
+        background-color: #f3e8ff;
+        border-width: 20;
+        border-style:dashed;
+        border-color: #999999;
+        padding: 6px;
+        border-radius: 15px;
+            .cloud-section{
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 20px;
+                color: #49454F;
+            }
+            .cloud-format{
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 16px;
+                color: #00000066;
+            }
+            .select-file{
+                margin-top: 20px;
+                color: #7E22CE;
+                border-color: #7E22CE;
+                font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+            }
+
     }
   }
 }
