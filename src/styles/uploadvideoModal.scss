@@ -33,7 +33,14 @@
     }
 }
 
-.upload-button{
-    margin-top: 20px !important;
-
+.upload-button-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    .upload-button{
+        background-color: #211935;
+    }
+    .upload-button:hover{
+        background-color: #211935;
+    }
 }

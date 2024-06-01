@@ -5,11 +5,11 @@ import Typography from "@mui/material/Typography";
 import Youtube from "../images/Frame 1.png";
 import "../styles/uploadItem.scss"
 
-const UploadItem = () => {
-
+const UploadItem = (props) => {
+const {toggleModal} = props
   return (
     <div>
-       <Card className="uploadItem-container" elevation={5}>
+       <Card className="uploadItem-container" elevation={5} onClick={() => toggleModal(true)}>
         <CardContent className="uploadItem-content">
             <img src={Youtube} alt="Youtube" width="60" height="60"/>
             <div className='uploadItem-right'>

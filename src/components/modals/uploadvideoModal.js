@@ -21,10 +21,10 @@ const style = {
   };
 
 const UploadvideoModal = (props) => {
-    const {openModal} = props
+    const {openModal,toggleModal} = props
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+    const handleClose = () => toggleModal(false);
   return (
     <div>
         <Modal
@@ -58,7 +58,9 @@ const UploadvideoModal = (props) => {
               className="description-textfield"
             />         
             </div>
-            <Button variant="contained" className="upload-button">Save</Button>
+            <div className="upload-button-container">
+            <Button variant="contained" className='upload-button' onClick={handleClose}>Save</Button>
+            </div>
         </Box>
       </Modal>
     </div>
