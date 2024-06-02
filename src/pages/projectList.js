@@ -12,7 +12,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import ButtonGroup from "@mui/material/ButtonGroup";
-
+import { useNavigate } from "react-router-dom";
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
 }
@@ -25,6 +25,9 @@ const rows = [
   createData("Gingerbread", 356, 16.0, 49, 3.9),
 ];
 const ProjectList = () => {
+
+  const navigate = useNavigate()
+
   const uploadObj = [
     {
       category: "Youtube",
@@ -87,7 +90,7 @@ const ProjectList = () => {
                         variant="contained"
                         aria-label="Basic button group"  
                       >
-                        <Button className="button-group1" variant="outlined">Edit</Button>
+                        <Button className="button-group1" variant="outlined" onClick={()=>{navigate('/edit')}}>Edit</Button>
                         <Button className="button-group2" variant="outlined">Delete</Button>
                       </ButtonGroup>
                     </TableCell>

@@ -15,6 +15,7 @@
       }
     }
     .sidebar-content {
+      cursor: pointer;
       display: flex;
       gap: 20px;
       background-color: #7e22ce;
@@ -41,6 +42,7 @@
       }
     }
     .sidebar-content2 {
+      cursor: pointer;
       display: flex;
       gap: 20px;
       background-color: #1d1b2014;
@@ -91,6 +93,7 @@
   .setting-section{
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
       .setting{
         margin-left: 10px;

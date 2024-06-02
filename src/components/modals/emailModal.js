@@ -23,6 +23,27 @@ const EmailModal = (props) => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => toggleModal(false);
 
+  const [email,setEmail] = React.useState("");
+  const [errorMessage, setErrorMessage] = React.useState("");
+
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  }
+
+  const handleSubmit = () => {
+    const email_regex = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
+    if(email.length>0 && email_regex.test(email)) {
+      localStorage.setItem("email",email);
+      handleClose()
+    } else {
+      setErrorMessage("Please enter a valid email");
+    }
+   
+  }
+
+  
+
   return (
     <div>
       <Modal
@@ -38,13 +59,15 @@ const EmailModal = (props) => {
               id="outlined-basic"
               variant="outlined"
               className="email-textfield"
+              onChange={handleEmailChange}
             />
+            <span style={{color:'red'}}>{errorMessage}</span>
           </div>
           <div className="submit-cancel">
             <Button className="cancel-button" variant="outlined" onClick={handleClose}>
               Cancel
             </Button>
-            <Button variant="contained" className="submit-button">
+            <Button variant="contained" className="submit-button" onClick={handleSubmit}>
               Submit
             </Button>
           </div>

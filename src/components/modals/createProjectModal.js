@@ -5,6 +5,7 @@ import Modal from "@mui/material/Modal";
 import TextField from "@mui/material/TextField";
 import "../../styles/baseModal.scss";
 import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 
 const style = {
@@ -21,10 +22,16 @@ const style = {
 
 
 const CreateProjectModal = (props) => {
+  const navigate = useNavigate();
     const { openModal , toggleModal } = props;
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => toggleModal(false);
+
+  const handleCreateProject = () => {
+    navigate("/projects");
+    handleClose()
+  }
   return (
     <div>
         <Modal
@@ -46,7 +53,7 @@ const CreateProjectModal = (props) => {
             <Button className="cancel-button" variant="outlined" onClick={handleClose}>
               Cancel
             </Button>
-            <Button variant="contained" className="submit-button">
+            <Button variant="contained" className="submit-button" onClick={handleCreateProject}>
               Create
             </Button>
           </div>

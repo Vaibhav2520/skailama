@@ -1,19 +1,150 @@
-.config-container{
-    display: flex;
+.config-container {
+  display: flex;
   width: 100%;
   height: 100vh;
-    .config-right{
-        width: 80%;
-        height: 100vh;
-        margin: 20px;
-        .config{
-            display: flex;
+  .config-right {
+    width: 80%;
+    height: 100vh;
+    margin: 20px;
+
+    .config {
+      display: flex;
       font-family: "Roboto", sans-serif;
       font-weight: 700;
       font-style: normal;
       color: #7e22ce;
       font-size: 40px;
-      margin-top: 25px;
+      margin-top: 15px;
+    }
+    .tab{
+      color: #7e22ce;
+    }
+    .chatbot-name-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .chatbot-name {
+        font-weight: 700;
+        text-align: left;
+        font-size: 25px;
+      }
+      .chatbot-textfield {
+        margin-top: 10px;
+      }
+      .lorem-class {
+        text-align: left;
+        color: #646464;
+        margin-top: 5px;
+      }
+    }
+    .primary-font-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .primary-container {
+        .primary-color {
+          text-align: left !important;
+          font-weight: 700;
+          font-size: 18px;
+        }
+        .primary-color-picker {
+          display: flex;
+          .primary-textfield {
+            margin-top: 10px;
+            margin-right: 20px;
+          }
+          .color-picker {
+            margin-top: 10px;
+          }
+        }
+        .ipsum-class {
+            margin-top: 5px;
+          color: #646464;
+        }
+      }
+    }
+    .font-size-chat-height-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .font-size-container{
+        .font-size {
+          text-align: left !important;
+          font-weight: 700;
+          font-size: 18px;
+        }
+        .font-size-textfield{
+            margin-top: 10px;
+            display: flex;
+        }
+        .dolor-class{
+            margin-top: 5px;
+            color: #646464;
+        }
+      }
+    }
+    .chat-icon-heading{
+        display: flex;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      color: #7e22ce;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    .chat-icon-container{
+        display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 10px;
+      .chat-icon{
+        .chat-icon-box{
+            text-align: left !important;
+          font-weight: 700;
+          font-size: 18px;
+        }
+        .form-control{
+          display: flex;
+          margin-right: 5px;
+        }
+      }
+    }
+    .distance-horizontal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .distance-bottom-container{
+            .distance-bottom{
+                text-align: left !important;
+          font-weight: 700;
+          font-size: 18px;
+            }
+            .distance-bottom-textfield{
+                margin-top: 10px;
+                width: 310px;
+            }
+        }
+
+    }
+    .upload-avatar{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .bot-icon{
+            
+            font-weight: 700;
+          font-size: 18px;
+        }
+        .avatar-button{
+            display: flex;
+            flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        margin-top: 2px;
+      .upload{
+        background-color: #7e22ce;
+      }
         }
     }
+  }
 }
